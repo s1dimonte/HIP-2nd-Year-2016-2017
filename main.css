@@ -24,4 +24,6 @@ h2 {
 	font-family: 'Trebuchet MS',Helvetica, sans-serif;
 	color: #384D48;
 	text-align: left;
+	background-image: url("https://raw.githubusercontent.com/s1dimonte/HIP-2nd-Year-2016-2017/master/background.jpg");
+	background-size: cover;
 }
