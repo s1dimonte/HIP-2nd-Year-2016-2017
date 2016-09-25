@@ -8,21 +8,21 @@ body {
 h1 {
 	font-size: 32px;
 	font-family: Palatino,'Palatino Linotype', serif;
-	color: #331832;
+	color: #384D48;
 	text-align: center;
 }
 
 h2 {
 	font-size: 24px;
 	font-family: Palatino,'Palatino Linotype', serif;
-	color: #384D48;
+	color: #331832;
 	text-align: left;
 }
 
 .linkSec {
 	font-size: 18px;
 	font-family: 'Trebuchet MS',Helvetica, sans-serif;
-	color: #384D48;
+	color: #331832;
 	text-align: left;
 	background-image: url("https://raw.githubusercontent.com/s1dimonte/HIP-2nd-Year-2016-2017/master/background.jpg");
 	background-size: cover;
