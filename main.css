@@ -27,3 +27,17 @@ h2 {
 	background-image: url("https://raw.githubusercontent.com/s1dimonte/HIP-2nd-Year-2016-2017/master/background.jpg");
 	background-size: cover;
 }
+
+h3 {
+	font-size: 24px;
+	font-family: Palatino,'Palatino Linotype', serif;
+	color: #AD866A;
+	text-align: left;	
+}
+
+.aboutMe {
+	font-size: 18px;
+	font-family: 'Trebuchet MS',Helvetica, sans-serif;
+	color: #331832;
+	text-align: left;
+}
