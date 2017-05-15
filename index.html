@@ -35,6 +35,17 @@
   Here are some words about me!
   </p>
   </div>
+    
+    <div id="Input LatLon">
+      <h3>Input Lat/Lon:</h3>
+      <tr>
+        <td><input type="text" name="start" id="start"></td>
+        <td><input type="text" name="stop" id="stop"></td>
+      </tr>
+      <tr>
+        <td><button onclick="master_drug()">Drug</button></td>
+      </tr>
+    </div>
   
 <div id="map"></div>
   <script>
@@ -94,6 +105,11 @@
         }],
         map: map
       });
+    }
+    
+    function getLatLon() {
+      var lat = document.getElementById("petLatitude").value;
+      var slon = document.getElementById("petLongitude").value;
     }
   </script>
   <script async defer
