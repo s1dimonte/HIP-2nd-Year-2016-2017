@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
+  <title> Sample Second Year Project Website </title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+ 
+  </style>
   </head>
+
   <body>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
-    </script>
-    <h3>....My map was supposed to be here</h3>
+  <h1>Sample Second Year Project Website</h1>
+
+  <div class="linkSec">
+  <h2>Topic Headers:</h2>
+  <ul>
+  <li>About Me</li>
+  <li>What I learned from Code Academy</li>
+  <li>My Project Proposal</li>
+  <li>My Project Timeline</li>
+  <li>My Project Schedule</li>
+  <li>My Final Project</li>
+  <li>Photos</li>
+  </ul>
+  </div>
+  
+  <div id="aboutMe">
+  <h3>About Me:</h3>
+  <p>
+  Here are some words about me!
+  </p>
+  </div>
+  
+<div id="map"></div>
+  <script>
+    function initMap() {
+      var uluru = {lat: -25.363, lng: 131.044};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
+  </script>
+  <h3>...my map should have been above this</h3>
+  </div>
   </body>
 </html>
