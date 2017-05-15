@@ -84,7 +84,16 @@
         scale: 4
       };
       
-
+      var line = new google.maps.Polyline({
+        path: [myPos, petPos],
+        strokeOpacity: 0,
+        icons: [{
+          icon: lineSymbol,
+          offset: '0',
+          repeat: '20px'
+        }],
+        map: map
+      });
     }
   </script>
   <script async defer
