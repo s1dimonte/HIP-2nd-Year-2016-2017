@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title> Sample Second Year Project Website </title>
-  <link rel="stylesheet" type="text/css" href="main.css"/>
-  <style>
-    #map {
+  <head>
+    <style>
+      #map {
         height: 400px;
         width: 100%;
-    }
-  </style>
-</head>
-
-<body>
-<h1>Sample Second Year Project Website</h1>
-
-<div class="linkSec">
-<h2>Topic Headers:</h2>
-<ul>
-<li>About Me</li>
-<li>What I learned from Code Academy</li>
-<li>My Project Proposal</li>
-<li>My Project Timeline</li>
-<li>My Project Schedule</li>
-<li>My Final Project</li>
-<li>Photos</li>
-</ul>
-</div>
-
-<div id="aboutMe">
-<h3>About Me:</h3>
-<p>
-Here are some words about me!
-</p>
-</div>
-  
-<div class="map">
-  <h3>My Google Maps Demo:</h3>
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
     <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -53,10 +27,6 @@ Here are some words about me!
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuPi6W_SvVl409_3JKlgZR1bVIi6Ghyr0&callback=initMap">
     </script>
-  <h3>...my map should have been above this</h3>
-  </div>
-
-
-</body>
-
+    <h3>...my map should have been above this</h3>
+  </body>
 </html>
