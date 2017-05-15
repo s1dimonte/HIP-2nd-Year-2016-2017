@@ -2,8 +2,14 @@
 <html>
 
 <head>
-<title> Sample Second Year Project Website </title>
-<link rel="stylesheet" type="text/css" href="main.css"/>
+  <title> Sample Second Year Project Website </title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,14 +28,14 @@
 </ul>
 </div>
 
-<div class="aboutMe">
+<div id="aboutMe">
 <h3>About Me:</h3>
 <p>
 Here are some words about me!
 </p>
 </div>
   
-  <div id="map"></div>
+<div class="map">
   <h3>My Google Maps Demo:</h3>
     <script>
       function initMap() {
@@ -45,9 +51,9 @@ Here are some words about me!
       }
     </script>
     <script async defer
-            key =  AIzaSyBuPi6W_SvVl409_3JKlgZR1bVIi6Ghyr0;
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuPi6W_SvVl409_3JKlgZR1bVIi6Ghyr0&callback=initMap">
     </script>
+  </div>
 
 
 </body>
