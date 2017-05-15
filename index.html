@@ -38,12 +38,19 @@
     
     <div id="Input LatLon">
       <h3>Input Lat/Lon:</h3>
+      <script>
+        function getLatLon() {
+          var lat = document.getElementById("petLatitude").value;
+          var lon = document.getElementById("petLongitude").value;
+          var petPos = {lat: lat, lng: lon};
+    }
+      </script>
       <tr>
-        <td><input type="text" name="start" id="start"></td>
-        <td><input type="text" name="stop" id="stop"></td>
+        <td><input type="text" name="petLatitude" id="petLatitude"></td>
+        <td><input type="text" name="petLongitude" id="petLongitude"></td>
       </tr>
       <tr>
-        <td><button onclick="master_drug()">Drug</button></td>
+        <td><button onclick="getLatLon()">Enter</button></td>
       </tr>
     </div>
   
@@ -107,10 +114,7 @@
       });
     }
     
-    function getLatLon() {
-      var lat = document.getElementById("petLatitude").value;
-      var slon = document.getElementById("petLongitude").value;
-    }
+    
   </script>
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
