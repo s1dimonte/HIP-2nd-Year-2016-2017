@@ -73,12 +73,29 @@
         icon: petMarker,
         title:"Pet's Location!"
       });
+      
+      var lineSymbol = {
+        path: 'M 0,-1 0,1',
+        strokeOpacity: 1,
+        scale: 4
+      };
+      
+      var line = new google.maps.Polyline({
+        path: [myPos, petPos],
+        strokeOpacity: 0,
+        icons: [{
+          icon: lineSymbol,
+          offset: '0',
+          repeat: '20px'
+        }],
+        map: map
+      });
     }
   </script>
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
   </script>
-  <h3>...my map should have been above this (new text 1)</h3>
+  <h3>...my map should have been above this (new text 2)</h3>
   </div>
   </body>
 </html>
