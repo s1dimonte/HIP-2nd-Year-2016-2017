@@ -45,14 +45,28 @@
         zoom: 12,
         center: myPos
       });
+      var myMarker = {
+        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+        fillColor: 'yellow',
+        strokeColor: 'gold',
+        strokeweight: 14
+      };
+      var petMarker = {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'blue',
+        strokeColor: 'gold',
+        strokeweight: 14
+      };
       var markerME = new google.maps.Marker({
         position: myPos,
         map: map,
+        icon: myMarker,
         title:"My Location!"
       });
       var markerPET = new google.maps.Marker({
         position: petPos,
         map: map,
+        icon: petMarker,
         title:"Pet's Location!"
       });
     }
