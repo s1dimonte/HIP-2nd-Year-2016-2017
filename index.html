@@ -40,6 +40,7 @@
       <h3>Input Lat/Lon:</h3>
       <script>
         function getLatLon() {
+          var petPos = {lat: 34.177690, lng: -118.597974};
           var lat = document.getElementById("petLatitude").value;
           var lon = document.getElementById("petLongitude").value;
           var petPos = {lat: lat, lng: lon};
@@ -58,7 +59,6 @@
   <script>
     function initMap() {     
       var myPos = {lat: 34.171451, lng: -118.595246};
-      var petPos = {lat: 34.177690, lng: -118.597974};
       
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
