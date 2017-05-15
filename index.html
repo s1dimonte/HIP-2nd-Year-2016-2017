@@ -42,22 +42,22 @@
       var myPos = {lat: 34.171451, lng: -118.595246};
       var petPos = {lat: 34.177690, lng: -118.597974};
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
+        zoom: 14,
         center: myPos
       });
       var myMarker = {
         path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
         fillColor: 'yellow',
         strokeColor: 'gold',
-        strokeweight: 14,
-        scale: 10
+        strokeweight: 8,
+        scale: 8
       };
       var petMarker = {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: 'cyan',
         strokeColor: 'blue',
-        strokeweight: 14,
-        scale: 10
+        strokeweight: 8,
+        scale: 8
       };
       var markerME = new google.maps.Marker({
         position: myPos,
@@ -76,7 +76,7 @@
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
   </script>
-  <h3>...my map should have been above this (new text)</h3>
+  <h3>...my map should have been above this (new text 1)</h3>
   </div>
   </body>
 </html>
