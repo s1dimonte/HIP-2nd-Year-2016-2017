@@ -39,12 +39,16 @@
 <div id="map"></div>
   <script>
     function initMap() {     
+      var myPos = {lat: 34.171451, lng: -118.595246};
+      var petPos = {lat: 34.177690, lng: -118.597974};
+      
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
-        center: myPos
+        center: myPos,
+        mapTypeId: 'terrain'
       });
       
-      var myPos = {lat: 34.171451, lng: -118.595246};
+      
       var myMarker = {
         path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
         fillColor: 'yellow',
@@ -59,7 +63,7 @@
         title:"My Location!"
       });
       
-      var petPos = {lat: 34.177690, lng: -118.597974};
+      
       var petMarker = {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: 'cyan',
@@ -95,7 +99,7 @@
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaxVXR4nuoUCR-IKaUEY0EiUWwruOIJ8A&callback=initMap">
   </script>
-  <h3>...my map should have been above this (new text 2)</h3>
+  <h3>...my map should have been above this (new text 3)</h3>
   </div>
   </body>
 </html>
