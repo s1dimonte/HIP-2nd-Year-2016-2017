@@ -38,26 +38,19 @@
   
 <div id="map"></div>
   <script>
-    function initMap() {
-      var myPos = {lat: 34.171451, lng: -118.595246};
-      var petPos = {lat: 34.177690, lng: -118.597974};
+    function initMap() {     
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myPos
       });
+      
+      var myPos = {lat: 34.171451, lng: -118.595246};
       var myMarker = {
         path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
         fillColor: 'yellow',
         strokeColor: 'gold',
-        strokeweight: 8,
-        scale: 8
-      };
-      var petMarker = {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillColor: 'cyan',
-        strokeColor: 'blue',
-        strokeweight: 8,
-        scale: 8
+        strokeweight: 6,
+        scale: 6
       };
       var markerME = new google.maps.Marker({
         position: myPos,
@@ -65,6 +58,15 @@
         icon: myMarker,
         title:"My Location!"
       });
+      
+      var petPos = {lat: 34.177690, lng: -118.597974};
+      var petMarker = {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'cyan',
+        strokeColor: 'blue',
+        strokeweight: 6,
+        scale: 8
+      };
       var markerPET = new google.maps.Marker({
         position: petPos,
         map: map,
