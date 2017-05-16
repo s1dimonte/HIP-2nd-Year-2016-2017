@@ -37,7 +37,7 @@
     function getMyPosition() {
       if ("geolocation" in navigator) {
         var latSelf  = Number(position.coords.latitude);
-        var lonSelf = Numberposition.coords.longitude);
+        var lonSelf = Number(position.coords.longitude);
         myPos = {lat: latSelf, lng: lonSelf};
       }
       else {
