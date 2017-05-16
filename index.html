@@ -49,8 +49,8 @@
     <h3> </h3>
   <script>
     function getLatLon() {
-          var lat = number(document.getElementById("petLatitude").value);
-          var lon = number(document.getElementById("petLongitude").value);
+          var lat = Number(document.getElementById("petLatitude").value);
+          var lon = Number(document.getElementById("petLongitude").value);
           petPos = {lat: lat, lng: lon};
     }
     function initMap() {     
