@@ -62,14 +62,25 @@
         mapTypeId: 'terrain'
       });
       
+      if ("geolocation" in navigator) {
+        var myMarker = {
+          path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+          fillColor: 'red',
+          strokeColor: 'red',
+          strokeweight: 6,
+          scale: 6
+        };
+      }
+      else {
+        var myMarker = {
+          path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+          fillColor: 'gold',
+          strokeColor: 'gold',
+          strokeweight: 6,
+          scale: 6
+        };
+      }
       
-      var myMarker = {
-        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-        fillColor: 'yellow',
-        strokeColor: 'gold',
-        strokeweight: 6,
-        scale: 6
-      };
       var markerME = new google.maps.Marker({
         position: myPos,
         map: map,
