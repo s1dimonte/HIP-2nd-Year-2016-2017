@@ -56,6 +56,9 @@
     function initMap() {     
       var myPos = {lat: 34.171451, lng: -118.595246};
       getLatLon();
+      if (!navigator.geolocation){
+        output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+      }
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myPos,
