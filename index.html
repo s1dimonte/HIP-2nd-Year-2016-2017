@@ -49,16 +49,22 @@
     <h3> </h3>
   <script>
     function getLatLon() {
-          var lat = Number(document.getElementById("petLatitude").value);
-          var lon = Number(document.getElementById("petLongitude").value);
-          petPos = {lat: lat, lng: lon};
+          var latPet = Number(document.getElementById("petLatitude").value);
+          var lonPet = Number(document.getElementById("petLongitude").value);
+          var petPos = {lat: latPet, lng: lonPet};
     }
     function initMap() {     
-      var myPos = {lat: 34.171451, lng: -118.595246};
-      getLatLon();
       if (!navigator.geolocation){
-        output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+        var myPos = {lat: 34.171451, lng: -118.595246};
       }
+      else {
+        var latSelf  = Number(position.coords.latitude);
+        var lonSelf = Numberposition.coords.longitude);
+        var myPos = {lat: latSelf, lng: lonSelf};
+      }
+      
+      getLatLon();
+      
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myPos,
