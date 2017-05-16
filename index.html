@@ -34,16 +34,7 @@
           var lonPet = Number(document.getElementById("petLongitude").value);
           var petPos = {lat: latPet, lng: lonPet};
     }
-    function getMyPosition(){
-      if (!navigator.geolocation){
-        var myPos = {lat: 34.171451, lng: -118.595246};
-      }
-      else {
-        var latSelf  = Number(position.coords.latitude);
-        var lonSelf = Numberposition.coords.longitude);
-        var myPos = {lat: latSelf, lng: lonSelf};
-      }
-    }
+
     function initMap() {      
       var myPos = {lat: 34.171451, lng: -118.595246};
       getLatLon();
