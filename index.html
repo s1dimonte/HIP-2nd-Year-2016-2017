@@ -36,8 +36,17 @@
           petPos = {lat: latPet, lng: lonPet};
     }
     function getMyPosition() {
-      var myPos = {lat: 34.171451, lng: -118.595246};
-    }
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            myPos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            }
+        }
+      else {
+        myPos = {lat: 34.171451, lng: -118.595246};
+      }
+                                                 }
     
     function initMap() {      
       getMyPosition();
