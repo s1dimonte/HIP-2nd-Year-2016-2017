@@ -45,74 +45,7 @@
       }
     }
 
-    function initMap() {      
-      getMyPosition();
-      getLatLon();
-      
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: myPos,
-        mapTypeId: 'terrain'
-      });
-      
-      if ("geolocation" in navigator) {
-        var myMarker = {
-          path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-          fillColor: 'red',
-          strokeColor: 'red',
-          strokeweight: 6,
-          scale: 6
-        };
-      }
-      else {
-        var myMarker = {
-          path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-          fillColor: 'gold',
-          strokeColor: 'gold',
-          strokeweight: 6,
-          scale: 6
-        };
-      }
-      
-      var markerME = new google.maps.Marker({
-        position: myPos,
-        map: map,
-        icon: myMarker,
-        title:"My Location!"
-      });
-      
-      
-      var petMarker = {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillColor: 'cyan',
-        strokeColor: 'blue',
-        strokeweight: 6,
-        scale: 8
-      };
-      var markerPET = new google.maps.Marker({
-        position: petPos,
-        map: map,
-        icon: petMarker,
-        title:"Pet's Location!"
-      });
-      
-      var lineSymbol = {
-        path: 'M 0,-1 0,1',
-        strokeOpacity: 1,
-        scale: 4
-      };
-      
-      var line = new google.maps.Polyline({
-        path: [myPos, petPos],
-        strokeOpacity: 0,
-        icons: [{
-          icon: lineSymbol,
-          offset: '0',
-          repeat: '20px'
-        }],
-        map: map
-      });
-    }
+    
     
     
   </script>
