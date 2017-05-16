@@ -14,7 +14,7 @@
   </head>
 
   <body>
-  <h1>Test of Google Maps Integration...</h1>
+  <h1>Test of Google Maps Integration</h1>
 
     
   
@@ -36,15 +36,7 @@
           petPos = {lat: latPet, lng: lonPet};
     }
     function getMyPosition() {
-      if ("geolocation" in navigator) {
-        <h3>Problem is here:</h3>
-        var latSelf  = Number(position.coords.latitude);
-        var lonSelf = Number(position.coords.longitude);
-        myPos = {lat: latSelf, lng: lonSelf};
-      }
-      else {
-        myPos = {lat: 34.171451, lng: -118.595246};
-      }
+      myPos = {lat: 34.171451, lng: -118.595246};
     }
     
     function initMap() {      
