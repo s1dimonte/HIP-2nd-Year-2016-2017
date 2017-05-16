@@ -53,7 +53,7 @@
           var lonPet = Number(document.getElementById("petLongitude").value);
           var petPos = {lat: latPet, lng: lonPet};
     }
-    function initMap() {     
+    function getMyPosition(){
       if (!navigator.geolocation){
         var myPos = {lat: 34.171451, lng: -118.595246};
       }
@@ -62,7 +62,10 @@
         var lonSelf = Numberposition.coords.longitude);
         var myPos = {lat: latSelf, lng: lonSelf};
       }
+    }
+    function initMap() {     
       
+      getMyPosition();
       getLatLon();
       
       var map = new google.maps.Map(document.getElementById('map'), {
